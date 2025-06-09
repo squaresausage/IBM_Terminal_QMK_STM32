@@ -74,10 +74,11 @@ void matrix_init(void)
     //debug_keyboard = true;
     //debug_mouse = false;
     
+
+    //Required Specifically for STM32F042G6 as its USB lines are hidden by default
     RCC->APB2ENR |= RCC_APB2ENR_SYSCFGCOMPEN;
     SYSCFG->CFGR1 |= SYSCFG_CFGR1_PA11_PA12_RMP;
     
-    dprint("hello");
     ps2_host_init();
 
     // initialize matrix state: all keys off

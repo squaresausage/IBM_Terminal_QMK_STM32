@@ -64,7 +64,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * PS/2 Interrupt configuration
  */
 #ifdef PS2_DRIVER_INTERRUPT
-/* uses INT1 for clock line(ATMega32U4) */
 #define PS2_CLOCK_PIN   A15
 #define PS2_DATA_PIN    A14
 

@@ -1,8 +1,8 @@
 {
   "keyboard_name": "IBM Terminal to USB Keyboard Converter",
   "manufacturer": "QMK",
-  "url": "",
-  "maintainer": "qmk",
+  "url": "https://github.com/squaresausage/IBM_Terminal_QMK_STM32",
+  "maintainer": "SquareSosig",
   "usb": {
     "vid": "0xFEED",
     "pid": "0x6535",
