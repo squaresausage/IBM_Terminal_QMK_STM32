@@ -25,10 +25,21 @@ A14 and A15 should/will be changed as they conflict with the SWD interface
 
 ## Build
 
+Follow the QMK setup guide: https://docs.qmk.fm/newbs_getting_started
 ```
-git clone https://github.com/qmk/qmk_firmware.git
-cd qmk_firmware
-make converter/ibm_terminal:default
+cd ~/qmk_firmware/keyboards/converter
+git clone https://github.com/squaresausage/IBM_Terminal_QMK_STM32.git
+cd ~/qmk_firmware
+qmk compile -kb converter/ibm_terminalstm32 -km default
+
+```
+
+## Program
+Within the ~/qmk_firmware folder
+
+STM32 must be connected to the host in bootloader mode
+```
+dfu-util -D .build/converter_ibm_terminalstm32_default.bin -a 0 -s 0x8000000:leave
 ```
 
 ## Resource
