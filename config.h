@@ -65,8 +65,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #ifdef PS2_DRIVER_INTERRUPT
 #define PS2_CLOCK_PIN   A15
-#define PS2_DATA_PIN    A14
-
+#define PS2_DATA_PIN    B3
 
 
 #endif
@@ -77,5 +76,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #ifdef PS2_DRIVER_BUSYWAIT
 #define PS2_CLOCK_PIN   A15
-#define PS2_DATA_PIN    A14
+#define PS2_DATA_PIN    B3
 #endif

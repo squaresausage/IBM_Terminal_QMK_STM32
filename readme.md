@@ -15,12 +15,12 @@ Original converter article: http://geekhack.org/index.php?topic=27272.0
 
 Keyboard | STM32F042G6
 :------- | :---------
-Data     |  A14
+Data     |  B3
 Clock    |  A15
 
 And VCC and GND, of course. See Resource section for keyboard connector pin assign.
 
-A14 and A15 should/will be changed as they conflict with the SWD interface
+
 
 
 ## Build
